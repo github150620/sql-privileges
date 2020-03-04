@@ -1,6 +1,6 @@
 CREATE TABLE users (
-  uid      int NOT NULL,
-  username varchar(40),
-  password varchar(40),
-  primary key (uid)
+  user_id  int NOT NULL AUTO_INCREMENT,
+  username varchar(20),
+  password varchar(40) COMMENT 'sha1()',
+  PRIMARY KEY (user_id)
 }
