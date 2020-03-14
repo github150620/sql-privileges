@@ -4,6 +4,5 @@ CREATE TABLE role_menus (
   menu_id int,
 
   PRIMARY KEY (id)
-);
-
-CREATE INDEX index_role_id ON TABLE role_menus(role_id);
+  KEY `role_id` (`role_id`)
+)
