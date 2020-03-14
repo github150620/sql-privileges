@@ -3,7 +3,6 @@ CREATE TABLE user_roles (
   user_id int,
   role_id int,
   
-  PRIMARY KEY (id)
-};
-
-CREATE INDEX index_user_id ON user_roles(user_id);
+  PRIMARY KEY (id),
+  KEY `user_id` (`user_id`)  
+)
